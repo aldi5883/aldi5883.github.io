@@ -1,12 +1,26 @@
 body {
-  background-image: url("images/backg.png");
-  background-size: 300px;
-  background-color: transparent; 
+  background-image: url("../img/backg.png");
+  background-size: 1440px;
+  background-repeat: no-repeat;
 }
 
-@font-face {
-  font-family: Horizon;
-  src: url('Horizon.otf') format(opentype);
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: Courier;
+  color: white;
+  -webkit-text-stroke: 1px black;
+
+}
+
+.nav-links a {
+  font-family: Courier;
+  color: white;
+  -webkit-text-stroke: 1px black;
+
 }
 
 .dropbtn {
