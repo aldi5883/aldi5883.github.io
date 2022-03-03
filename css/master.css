@@ -3,16 +3,30 @@ body {
   background-color: yellow;
 }
   .box {
-    background-color:
+    background-color: yellow;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
   }
   .title{
     background-color: red;
+    grid-row: 1;
+    grid-column: 1 / 4;
+    padding: 20px;
   }
   .nav {
     background-color: green;
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    padding: 20px;
   }
   .content{
     background-color: purple;
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    padding: 20px;
   }
 }
 
