@@ -1,22 +1,40 @@
+div {
+  background-color: green;
+  padding: 20px;
+}
+
 p {
-  color: purple;
-  text-align: center;
+  background-color: yellow;
+  padding: 5px;
+  margin: 5px;
 }
 
-#test-id-1 {
-   color: purple;
+@media screen and (min-width: 600px) {
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: yellow;
+    padding: 20px;
+  }
+
+  p {
+    background-color: yellow;
+    flex: 2;
+  }
+
+  .test {
+    width: 100px;
+  }
 }
 
-.test-class {
-  text-shadow: 3px 6px grey;
-}
+@media screen and (width: 600px) {
+  div {
+    background-color: red;
+    padding: 20px;
+  }
 
-a:hover {
-  color: darkblue;
-  font-weight: bold;
-}
-
-h1 {
-  font-style: italic;
-  font-size: 300%;
+  p {
+    background-color: orange;
+  }
 }
