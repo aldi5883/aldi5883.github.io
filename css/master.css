@@ -1,0 +1,21 @@
+@media screen and (min-width:400px) {
+body {
+  background-color: yellow;
+}
+  .box {
+    background-color:
+  }
+  .title{
+    background-color: red;
+  }
+  .nav {
+    background-color: green;
+  }
+  .content{
+    background-color: purple;
+  }
+}
+
+@media screen and (max-width:399px) {
+
+}
