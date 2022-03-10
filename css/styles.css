@@ -55,6 +55,12 @@ h1 {
 @media screen and (max-width:399px) {
   .box{
     width: 100%;
+    height: auto;
+  }
+  .content{
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    padding: 20px;
   }
 
 }
