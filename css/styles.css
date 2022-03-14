@@ -75,7 +75,13 @@ h1 {
   }
 }
 
-#gallery {
+marquee img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+#gallery img{
    line-height: 1;
    -webkit-column-count:3;
    -webkit-column-gap:5px;
