@@ -34,6 +34,8 @@ h1 {
 
 }
 
+
+
 .nav-links a {
   font-family: Courier;
   color: white;
@@ -41,10 +43,12 @@ h1 {
 
 }
 
-img {
+#imagery img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
 }
 
 @media screen and (min-width:400px) {
@@ -69,6 +73,22 @@ img {
     grid-column: 2 / 4;
     padding: 20px;
   }
+}
+
+#gallery {
+   line-height: 1;
+   -webkit-column-count:3;
+   -webkit-column-gap:5px;
+   -moz-column-count:2;
+   -moz-column-gap:5px;
+   column-count:2;
+   column-gap:5px;
+}
+
+#gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:3px;
 }
 
 @media screen and (max-width:399px) {
