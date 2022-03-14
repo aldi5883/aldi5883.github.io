@@ -5,6 +5,14 @@ body {
   background-repeat: no-repeat;
 }
 
+ul {
+  font-family: Courier;
+}
+
+h3 {
+  font-family: Courier;
+}
+
 p {
   font-family: Courier;
 }
@@ -12,6 +20,10 @@ p {
 nav {
   display: flex;
   justify-content: space-between;
+}
+
+.penguins {
+  font-family: Courier;
 }
 
 h1 {
@@ -27,6 +39,12 @@ h1 {
   color: white;
   -webkit-text-stroke: 1px black;
 
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 @media screen and (min-width:400px) {
