@@ -9,7 +9,7 @@ function button2Clicked() {
 function windowLoaded() {
   console.log('loaded ok!');
   document.getElementById('button-1').addEventListener('click', button1Clicked);
-  document.getElementById('button-2').addEventListener('mousedown', button2Clicked);
+  document.getElementById('button-2').addEventListener('mouseover', button2Clicked);
   /*
   mouseover
   mouseleave
