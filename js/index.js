@@ -1,1 +1,7 @@
-console.log('linked ok!');
+
+
+function windowLoaded() {
+  console.log('loaded ok!');
+}
+
+window.onload = windowLoaded;
