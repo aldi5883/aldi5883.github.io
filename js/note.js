@@ -5,11 +5,12 @@ let myVariable2 = 'Alex';
 
 myVariable = 'Diana';
 
+
 /* This is a multi-line comment */
 //this is a comment
 
 //variables
-
+/*
 let myVariable = 'bob'; //STRINGS
 let myNumber = 3; //NUMBER
 let myBoolean = true; //BOOLEANS
@@ -33,7 +34,10 @@ myNumber === 4; // <-- this will result in false
 
 //not, does-not-equal
 !(myNumber === 3); // !(true) = false;
-myVariable !== 3; //false
+myVariable !== 3; //fals
+*/
+
+
 
 //conditionals
 
