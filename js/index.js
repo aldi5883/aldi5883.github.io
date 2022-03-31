@@ -4,7 +4,8 @@ function button1Clicked() {
 
 function windowLoaded() {
   console.log('loaded ok!');
-  document.getElementById('button-1').addEventListener('click, button1Clicked');
+  document.getElementById('button-1').addEventListener('click', button1Clicked);
+
   /*
   mouseover
   mouseleave
