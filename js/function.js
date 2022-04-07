@@ -23,5 +23,5 @@ function displayQuote(quote) {
 
 const endpoint = 'https://catfact.ninja/fact'
 
-const.quoteButton = document.querySelector('#js-new-quote');
+const quoteButton = document.querySelector('#js-new-quote');
 quoteButton.addEventListener('click', getQuote);
