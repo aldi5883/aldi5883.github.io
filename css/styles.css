@@ -5,8 +5,18 @@ body {
   background-repeat: no-repeat;
 }
 
-ul {
-  font-family: Courier;
+ul a {
+  font-family: Arial;
+  color: black;
+}
+
+ul a:hover {
+  color: purple;
+  font-weight: bold;
+}
+
+li:hover {
+  color: purple;
 }
 
 h3 {
@@ -22,8 +32,14 @@ nav {
   justify-content: space-between;
 }
 
-.penguins {
-  font-family: Courier;
+.penguins a {
+  font-family: Arial;
+  color: black;
+}
+
+.penguins a:hover {
+  font-weight: bold;
+  color: purple;
 }
 
 h1 {
@@ -35,12 +51,17 @@ h1 {
 }
 
 
-
 .nav-links a {
   font-family: Courier;
   color: white;
   -webkit-text-stroke: 1px black;
+  font-weight: bold;
 
+}
+
+.nav-links a:hover {
+  color: purple;
+  font-weight: bold;
 }
 
 #imagery img {
