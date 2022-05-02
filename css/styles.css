@@ -51,6 +51,15 @@ h1 {
 }
 
 
+h4 {
+  font-family: Courier;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+
+}
+
+
 .nav-links a {
   font-family: Courier;
   color: white;
