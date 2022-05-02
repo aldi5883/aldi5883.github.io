@@ -1,30 +1,17 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+// portfolio
+ $('.gallery ul li a').click(function() {
+     var itemID = $(this).attr('href');
+     $('.gallery ul').addClass('item_open');
+     $(itemID).addClass('item_open');
+     return false;
+ });
+ $('.close').click(function() {
+     $('.port, .gallery ul').removeClass('item_open');
+     return false;
+ });
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+ $(".gallery ul li a").click(function() {
+     $('html, body').animate({
+         scrollTop: parseInt($("#top").offset().top)
+     }, 400);
+ });
