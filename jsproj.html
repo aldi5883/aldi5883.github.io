@@ -6,114 +6,87 @@
     <link rel="stylesheet" href="./css/styles.css" type="text/css" />
     <link rel="stylesheet" href="./css/jsproj.css" type="text/css" />
     <script src="../js/jsproj.js"></script>
+
   </head>
 
   <body>
-    <table style="text-align: left;">
+    <table style="text-align: left">
 
-          <nav>
-              <h1>projects</h1>
+        <nav>
+            <h1>project</h1>
+          <div class="nav-links">
+            <a href="index.html">home</a>
+            <a href="work.html">work</a>
+            <a href="random.html">random</a>
+            <a href="about.html">about</a>
+          </div>
+        </nav>
 
-            <div class="nav-links">
-              <a href="work.html">work</a>
-              <a href="about.html">about</a>
-              <a href="random.html">random</a>
+
+        <div class="container">
+
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+              <img src="img/dj.png" style="width:80%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+              <img src="img/flowers.png" style="width:80%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+              <img src="img/london.png" style="width:80%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+              <img src="img/me.png" style="width:80%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+              <img src="img/moreflowers.png" style="width:80%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+              <img src="img/seattle.png" style="width:80%">
+          </div>
+
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="img/dj.png" style="width:100%" onclick="currentSlide(1)" alt="The Rave">
             </div>
-          </nav>
-
-    <!-- Images used to open the lightbox -->
-<div class="row">
-  <div class="column">
-    <img src="img/dj.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img/flowers.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img/london.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img/me.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img/moreflowers.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
-  </div>
-  <div class="column">
-    <img src="img/seattle.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
-  </div>
-</div>
-
-<!-- The Modal/Lightbox -->
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <img src="img/dj.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-      <img src="img/flowers.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img src="img/london.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img src="img/me.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-      <img src="img/moreflowers.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-      <img src="img/seattle.png" style="width:100%">
-    </div>
-
-    <!-- Next/previous controls -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <!-- Caption text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <!-- Thumbnail image controls -->
-    <div class="column">
-      <img class="demo" src="img/dj.png" onclick="currentSlide(1)" alt="Nature">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img/flowers.png" onclick="currentSlide(2)" alt="Snow">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img/london.png" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img/me.png" onclick="currentSlide(4)" alt="Lights">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img/moreflowers.png" onclick="currentSlide(5)" alt="Lights">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img/seattle.png" onclick="currentSlide(6)" alt="Lights">
-    </div>
-  </div>
-</div>
+            <div class="column">
+              <img class="demo cursor" src="img/flowers.png" style="width:100%" onclick="currentSlide(2)" alt="The Bouquet">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/london.png" style="width:100%" onclick="currentSlide(3)" alt="The London Street">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/me.png" style="width:100%" onclick="currentSlide(4)" alt="The Bright Light">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/moreflowers.png" style="width:100%" onclick="currentSlide(5)" alt="The Flowers">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/seattle.png" style="width:100%" onclick="currentSlide(6)" alt="The Seattle Architecture">
+            </div>
+          </div>
+        </div>
 
   </body>
-
-
-
 </html>
