@@ -23,70 +23,34 @@
         </nav>
 
 
-        <div class="container">
-
-
-          <div class="mySlides">
-            <div class="numbertext">1 / 6</div>
-              <img src="img/dj.jpg" style="width:80%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-              <img src="img/flowers.jpg" style="width:80%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-              <img src="img/london.jpg" style="width:80%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-              <img src="img/me.jpg" style="width:80%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-              <img src="img/moreflowers.jpg" style="width:80%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-              <img src="img/seattle.jpg" style="width:80%">
-          </div>
-
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-
-
-          <div class="row">
-            <div class="column">
-              <img class="demo cursor" src="img/dj.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Rave">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/flowers.jpg" style="width:100%" onclick="currentSlide(2)" alt="The Bouquet">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/london.jpg" style="width:100%" onclick="currentSlide(3)" alt="The London Street">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/me.jpg" style="width:100%" onclick="currentSlide(4)" alt="The Bright Light">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/moreflowers.jpg" style="width:100%" onclick="currentSlide(5)" alt="The Flowers">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/seattle.jpg" style="width:100%" onclick="currentSlide(6)" alt="The Seattle Architecture">
-            </div>
-          </div>
+    <div class="slider-container">
+      <div class="slide">
+        <img src="img/dj.jpg" class="slide-img" alt="DJ" />
+        <h1>1</h1>
+      </div>
+      <div class="slide">
+        <h1>2</h1>
+      </div>
+      <div class="slide">
+        <h1>3</h1>
+      </div>
+      <div class="slide">
+        <div>
+          <img src="img/seattle.jpg" class="seattle-img" alt="seattle" />
+          <h4>seattle</h4>
+          <h1>4</h1>
         </div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button type="button" class="prevBtn">
+        prev
+      </button>
+      <button type="button" class="nextBtn">
+        next
+      </button>
+    </div>
+
 
   </body>
 </html>
